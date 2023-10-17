@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="raf-style.css">
+    <link rel="icon" type="img/png" href="./IMGS/icon.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>RAF</title>
+</head>
+<body>
+
+    <div class="loader">
+        <p class="loader-txt">RAF</p>
+    </div>
+
+    <div class="mapBox">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d40747.621744967975!2d30.931292327104607!3d50.334356283029905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zcmFmINCx0L7RgNC40YHQv9C-0LvRjA!5e0!3m2!1sru!2sua!4v1635711372406!5m2!1sru!2sua" width="1280" height="720" style="border:0;" allowfullscreen="" loading="lazy" class="map-box"></iframe>
+    </div>
+
+    <div class="adress-schedule">
+        <div class="adress"> 
+            <p>🍔 Київський Шлях 69Д,</p>
+            <p>☕ Київський Шлях 79В,</p>
+            <p>☕ Володимира Момота 42А,</p>
+            <p>☕ Головатого 20|Квіти "ОММ",</p>
+            <p>☕ Київський Шлях 27.</p>
+        </div>
+        <div class="schedule">
+             <p>⏲ 8:00 - 21:00</p>  
+        </div>
+    </div>
+
+    <main id="main"> 
+        <img src="./IMGS/main/main-bg.svg" alt="" class="main-bg">
+            <div class="container"> 
+                <header>
+
+                    <ul>
+                        <li><a href="#">
+                            <span>R</span>
+                            <span>A</span>
+                            <span>F</span>
+                        </a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#new">Новинки</a></li>
+                        <li><a href="#instSlider">Інстаграм</a></li>
+                        <li id="adress"><a href="#">Адреси та Розклад</a></li>
+                        <li><a href="#">Бориспіль</a></li>
+                    </ul>
+
+                </header>
+                <img src="./IMGS/main/coffee-bean.svg" alt="" class="main-img bean" loading="lazy">
+
+                <img src="./IMGS/main/burger bun.svg" alt="" class="main-img bun" loading="lazy">
+
+                <img src="./IMGS/main/tomato.svg" alt="" class="main-img tomato" loading="lazy">
+
+                <div class="main-body">
+                    <div class="main-txt"> 
+                        <h2>Кава? Бургери? - все це у нас!</h2>
+
+                        <div class="mask-container">Найсмачніший 
+                            <div class="mask">
+                                <span data-show>Капучіно</span>
+                                <span>Флетвайт</span>
+                                <span>Еспресо</span>
+                                <span>Американо</span>
+                                <span>Лате</span>
+                                <span>Раф</span>
+                            </div>
+                            з самого ранку у нас.
+                        </div>
+
+                        <button class="map-btn">Подивитися Карти <ion-icon name="location-outline"></ion-icon></button>
+
+                        <div id="Advantage">
+                            <div class="advantage">
+                                <img src="./IMGS/main/menu-main.svg" alt="" loading="lazy">
+
+                                <p>Стежимо за якістю приготування напоїв</p>
+                            </div>
+
+                            <div class="advantage">
+                                <img src="./IMGS/main/lettuce-main.svg" alt="" loading="lazy">
+
+                                <p>Вводимо нові сорти кави</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="./IMGS/main/Coffee.svg" alt="" loading="lazy">
+                </div>
+            </div>
+    </main>
+
+    <section class="meals" id="menu">
+        <div class="meals-header">
+            <h1 data-aos="fade-up">Наші страви та напої</h1>
+
+            <div class="meals-btns" data-aos="fade-up">
+                <button class="meals-btn" id="mFirst">
+                    Кави
+                </button>
+
+                <button class="meals-btn" id="mSecond">
+                    Бургери
+                </button>
+            </div>
+        </div>
+
+        <!-- разновидности кофе и тому подобное будут на самой странице кофе или бургера -->
+        <div class="meals-main">
+            <ul class="meals-list">
+                <li data-aos="fade-up">
+                    <a href="#menu">
+                        <img src="./IMGS/meals/coffee/cappucino.svg" alt="" loading="lazy">
+                    
+                        <div class="meals-txt">
+                            <h2>Лате</h2>
+
+                            <p>Італійський винахід мистецтва!</p>
+
+                            <p class="meals-price">35/45/60 грн</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li data-aos="fade-up">
+                    <a href="#menu">
+                        <img src="./IMGS/meals/coffee/latte.svg" alt="" loading="lazy">
+
+                        <div class="meals-txt">
+                            <h2>Флетвайт</h2>
+
+                            <p>Молочна-Австралійська насолода.</p>
+
+                            <p class="meals-price">40/50/55 грн</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li data-aos="fade-up">
+                    <a href="#menu">
+                        <img src="./IMGS/meals/coffee/flat white.svg" alt="" loading="lazy">
+
+                        <div class="meals-txt">
+                            <h2>Капучіно</h2>
+
+                            <p>Не вистачає тільки круасану</p>
+
+                            <p class="meals-price">35/45/60 грн</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li data-aos="fade-up">
+                    <a href="#menu">
+                        <img src="./IMGS/meals/coffee/espresso.svg" alt="" loading="lazy">
+
+                        <div class="meals-txt">
+                            <h2>Еспресо</h2>
+
+                            <p>Італійський винахід мистецтва!</p>
+
+                            <p class="meals-price">35/45/60 грн</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li data-aos="fade-up">
+                    <a href="#menu">
+                        <img src="./IMGS/meals/burgers/burger-meal.jpg" alt="" loading="lazy">
+
+                        <div class="meals-txt">
+                            <h2>Класичний Великий</h2>
+
+                            <p>Велика котлета з яловичини...</p>
+
+                            <p class="meals-price">125/179 грн</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li data-aos="fade-up">
+                    <a href="#menu">
+                        <img src="./IMGS/meals/burgers/burger-meal-2.jpg" alt="" loading="lazy">
+
+                        <div class="meals-txt">
+                        <h2>Фірмовий Раф</h2>
+
+                            <p>Велике котлета з яловичини...</p>
+
+                            <p class="meals-price">165/209 грн</p>
+                        </div>
+                    </a>
+                </li>
+
+                <button class="meals-more">Більше <ion-icon name="arrow-down-outline" class="meals-more-arrow"></ion-icon></button>
+                <button class="meals-more less" id="btnLess">Менше <ion-icon name="arrow-up-outline" class="meals-more-arrow" ></ion-icon></button>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="new" id="new">
+        <h1 data-aos="fade-up">Новинки меню</h1>
+
+        <div class="new-main" data-aos="fade-up">
+            <div class="new-txt">
+                <h2>Погода велить включати чайний режим</h2>
+
+                <p>
+                    Тобі точно сподобається, Має виразну палітру смаків
+                </p>
+
+                <h2 class="new-txt-title">Смаки</h2>
+
+                <p>
+                    Білий, червоний, зелений, синій, гречаний, м‘ятна троянда, масала, шен пуер, китайський, квітковий, ягідній і більше
+                </p>
+            </div>
+            <div class="new-img-container" data-aos="fade-up"> 
+               <a href="https://www.instagram.com/p/CWLUPKysjUX/" target="_blank"><img src="./IMGS/new/tea raf.svg" alt="" loading="lazy" class="new-img"></a> 
+            </div>
+        </div>
+    </section>
+
+    <div class="instagram-slider" id="instSlider">
+       <a href="https://www.instagram.com/raf_espresso_bar/" target="_blank">
+            <div class="instagram-popup">
+                <div class="text-container">
+                    <img src="./IMGS/carousel/instagram.png" alt="" loading="lazy">
+
+                    <p>@raf_espresso_bar</p>
+                </div>
+
+            </div>
+        </a> 
+
+        <div class="carousel">
+            <img src="./IMGS/carousel/carousel-photo1.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo2.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo3.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo4.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo5.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo6.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo1.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo2.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo3.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo4.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo5.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo6.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo1.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo2.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo3.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo4.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo5.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo6.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo1.jpg" alt="" loading="lazy">
+            <img src="./IMGS/carousel/carousel-photo2.jpg" alt="" loading="lazy">
+        </div>
+    </div>
+
+    <section class="delivery">
+        <img src="./IMGS/delivery/delivery.png" alt="" data-aos="fade-right" loading="lazy">
+
+        <div class="delivery-txt" data-aos="fade-left">
+            <h1>Ви також можете зателефонувати нам та замовити страви додому!</h1>
+
+            <p>Телефонуйте <span id="number" onmouseleave="funcOff()">+38(068) 539 92 46</span> та замовляєте вашу улюблену їжу</p>
+        </div>
+    </section>
+
+    <div class="gallery" data-aos="fade-up">
+        <img loading="lazy" class="gallery-img" src="./IMGS/gallery/barista.svg" alt="">
+        <img loading="lazy" class="gallery-img" src="./IMGS/gallery/coffee.jpg" alt="">
+        <img loading="lazy" class="gallery-img" src="./IMGS/gallery/red-tea-gallery.jpg" alt="">
+        <img loading="lazy" class="gallery-img" src="./IMGS/gallery/bar-gallery.jpg" alt="">
+        <img loading="lazy" class="gallery-img" src="./IMGS/gallery/cocktails-gallery.jpg" alt="">
+        <img loading="lazy" class="gallery-img" src="./IMGS/gallery/newspaper.jpg" alt="">
+        <img loading="lazy" class="gallery-img" src="./IMGS/gallery/woman.jpg" alt="">
+    </div>
+
+    <div class="overflow"> </div>
+    <div class="gallery active">
+        <img loading="lazy" class="gallery-active-img" src="./IMGS/gallery/barista.svg" alt="">
+        <img loading="lazy" class="gallery-active-img" src="./IMGS/gallery/coffee.jpg" alt="">
+        <img loading="lazy" class="gallery-active-img" src="./IMGS/gallery/red-tea-gallery.jpg" alt="">
+        <img loading="lazy" class="gallery-active-img" src="./IMGS/gallery/bar-gallery.jpg" alt="">
+        <img loading="lazy" class="gallery-active-img" src="./IMGS/gallery/cocktails-gallery.jpg" alt="">
+        <img loading="lazy" class="gallery-active-img" src="./IMGS/gallery/newspaper.jpg" alt="">
+        <img loading="lazy" class="gallery-active-img" src="./IMGS/gallery/woman.jpg" alt="">
+    </div>
+
+    <footer id="footer">
+        <img src="./IMGS/footer/wave.svg" alt="" loading="lazy">
+
+        <ul class="footer-list">
+            <li>                            
+                <a href="#">
+                    <span>R</span>
+                    <span>A</span>
+                    <span>F</span>
+                </a>
+            </li>
+           <li><a href="#footer" id="company">Про компанію</a></li>
+           <li><a href="#footer">Контакти</a></li>
+        </ul>
+
+        <p class="autor" onmouseleave="funcOut()">made by: <span id="autorTxt">maxpavliy@gmail.com</span><span class="tooltip">Скопіювати</span></p>
+    </footer>
+
+    <div class="about-the-company">
+        <p>Ми – команда RAF (еспресо капучино бар). Працюємо вже більше п'яти років у чудовому місті Бориспіль. 
+            У нас варять дуже смачну каву, роблять найсмачніші бургери та подають найкращі десерти! І обов'язково приходьте до нас у гості. 
+            У нас дуже затишно☀️, 📍Ми працюємо в центрі з 8 ранку👌🏼</p>
+    </div>
+
+    <div class="overflow"></div>
+
+    <ul class="go-to-top-menu" id="adaptMenu">
+        <a href="#">
+            <li>
+                Головна
+            </li>
+        </a>
+        <a href="#menu">
+            <li>
+                Меню
+            </li>
+        </a>
+        <a href="#new"> 
+            <li>
+                Новинки
+            </li>
+        </a>
+        <a href="#instSlider"> 
+            <li>
+                Інста     
+            </li>
+        </a>
+        
+    </ul>
+
+    <div class="menu-overflow"></div>
+
+    <div class="go-to-top-btn">
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+    </div>
+
+    <script src="./raf-script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+   <!--  aos  -->
+
+   <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
